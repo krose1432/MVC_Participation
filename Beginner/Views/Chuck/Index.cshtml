@@ -1,0 +1,46 @@
+﻿@model Beginner.Models.RandomChuckJokeApi
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="jumbotron">
+  <h1>Random Chuck Norris Joke</h1>
+  <p>@Model.value</p>
+  <img src ="@Model.icon_url"/>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+</div>
+
+@*<div>
+    <h4>RandomChuckJokeApi</h4>
+    <hr />
+
+
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.Displ ayNameFor(model => model.icon_url)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.icon_url)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.url)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.url)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.value)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.value)
+        </dd>
+    </dl>
+</div>
+*@
